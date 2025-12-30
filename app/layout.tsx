@@ -4,6 +4,7 @@ import "./globals.css";
 import { HeroHeader } from "./Components/navbar";
 import WhatsAppButton from "./Components/WhatsAppButton";
 import AnnouncementBarStacked from "./Components/AnnouncementBarStacked";
+import FooterGlow from "./Components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({
         </div>
         {children}
         <WhatsAppButton />
+        <FooterGlow />
       </body>
     </html>
   );

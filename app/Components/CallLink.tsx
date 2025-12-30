@@ -1,33 +1,22 @@
-// components/CalButton.jsx
+// components/CalLink.jsx
 "use client";
 
 import { useEffect } from "react";
 import { getCalApi } from "@calcom/embed-react";
-import { Button } from "@/components/ui/button";
 
-interface CalButtonProps {
+interface CalLinkProps {
   children: React.ReactNode;
-  size?: "default" | "sm" | "lg" | "icon";
-  variant?:
-    | "default"
-    | "destructive"
-    | "outline"
-    | "secondary"
-    | "ghost"
-    | "link";
   className?: string;
   calLink?: string;
   namespace?: string;
 }
 
-export default function CalButton({
+export default function CalLink({
   children,
-  size = "default",
-  variant = "default",
   className = "",
   calLink = "nishanthan-krishnarajah-s6anw2/30min",
   namespace = "30min",
-}: CalButtonProps) {
+}: CalLinkProps) {
   useEffect(() => {
     (async function () {
       const cal = await getCalApi({ namespace });
@@ -39,16 +28,14 @@ export default function CalButton({
   }, [namespace]);
 
   return (
-    <Button
+    <button
       data-cal-namespace={namespace}
       data-cal-link={calLink}
       data-cal-config='{"layout":"month_view"}'
-      size={size}
-      variant={variant}
       className={className}
-      asChild={false}
+      onClick={(e) => e.preventDefault()} // Prevent default behavior
     >
       {children}
-    </Button>
+    </button>
   );
 }

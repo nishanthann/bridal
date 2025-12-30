@@ -1,6 +1,5 @@
 import AboutPage from "./Components/about";
 import Cta from "./Components/Cta";
-import FooterGlow from "./Components/Footer";
 
 import BridalHomePage from "./Components/home";
 import MasonryGallery from "./Components/ImageGallery";
@@ -15,7 +14,6 @@ export default function Home() {
       <MasonryGallery />
       <MakeupPricing />
       <Cta />
-      <FooterGlow />
     </>
     // <div className="flex min-h-screen items-center justify-center font-sans"></div>
   );
