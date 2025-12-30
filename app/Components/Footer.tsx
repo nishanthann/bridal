@@ -17,7 +17,7 @@ export default function FooterGlow() {
       {/* Main footer container */}
       <div className="w-full">
         {/* Main footer content */}
-        <div className="relative mx-auto flex max-w-6xl flex-col gap-8 rounded-2xl border border-white/10 bg-linear-to-br from-transparent to-rose-950/30 p-8 backdrop-blur-sm md:flex-row md:justify-between md:gap-12">
+        <div className="relative mx-auto flex max-w-7xl flex-col gap-8 rounded-2xl border border-white/10 bg-linear-to-br from-transparent to-rose-950/30 p-8 backdrop-blur-sm md:flex-row md:justify-between md:gap-12">
           {/* Left: Brand, Description & Contact */}
           <div className="flex flex-col md:flex-row md:gap-12 md:flex-1">
             {/* Brand & Description */}
@@ -187,7 +187,7 @@ export default function FooterGlow() {
         </div>
 
         {/* Copyright inside footer */}
-        <div className="mx-auto max-w-6xl mt-8 pt-8 border-t border-white/10">
+        <div className="mx-auto max-w-7xl mt-8 pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
               <p className="text-sm text-white/60">

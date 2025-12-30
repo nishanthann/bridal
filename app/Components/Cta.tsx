@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CalLink from "./CallLink";
 
 export default function Cta() {
   return (
@@ -13,17 +14,14 @@ export default function Cta() {
             create your perfect bridal look
           </p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
+            <CalLink className="rounded-full bg-rose-600 px-10 py-3 font-medium text-white transition-all hover:bg-rose-700 hover:shadow-lg">
+              Book Consultation
+            </CalLink>
             <Link
               href="/contact"
-              className="rounded-full bg-rose-600 px-10 py-3 font-medium text-white transition-all hover:bg-rose-700 hover:shadow-lg"
-            >
-              Book Consultation
-            </Link>
-            <Link
-              href="/portfolio"
               className="rounded-full border border-gray-600 bg-transparent px-10 py-3 font-medium text-white transition-all hover:border-gray-500 hover:bg-white/5"
             >
-              View Our Work
+              Get In Touch
             </Link>
           </div>
         </div>
