@@ -32,9 +32,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
       >
         <AnnouncementBarStacked />
-        <div className="pt-7">
-          <HeroHeader />
-        </div>
+
+        <HeroHeader />
+
         {children}
         <WhatsAppButton />
         <FooterGlow />

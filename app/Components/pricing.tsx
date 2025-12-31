@@ -34,7 +34,7 @@ export const pricingPlans: PricingPlan[] = [
       "Perfect for your big day",
     ],
     cta: "Book Now",
-    link: "#",
+    link: "tel:+94776103470",
     tag: "Party Look",
     icon: <Star className="h-4 w-4" />,
   },
@@ -50,7 +50,7 @@ export const pricingPlans: PricingPlan[] = [
       "Perfect for small ceremonies",
     ],
     cta: "Book Now",
-    link: "#",
+    link: "tel:+94776103470",
     tag: "Ceremony Special",
     icon: <Heart className="h-4 w-4" />,
   },
@@ -66,7 +66,7 @@ export const pricingPlans: PricingPlan[] = [
       "Touch-up kit provided",
     ],
     cta: "Book Now",
-    link: "#",
+    link: "tel:+94776103470",
     tag: "Bridal Package",
     highlight: true,
     icon: <Sparkles className="h-4 w-4 fill-amber-500 text-amber-400" />,
@@ -83,7 +83,7 @@ export const pricingPlans: PricingPlan[] = [
       "Pre-wedding consultation",
     ],
     cta: "Book Now",
-    link: "#",
+    link: "tel:+94776103470",
     tag: "Premium Bridal",
     icon: <Crown className="h-4 w-4" />,
   },
@@ -100,7 +100,7 @@ export const pricingPlans: PricingPlan[] = [
       "Emergency touch-up kit",
     ],
     cta: "Book Now",
-    link: "#",
+    link: "tel:+94776103470",
     tag: "Ultimate Package",
     highlight: true,
     icon: <Award className="h-5 w-5 fill-amber-500 " />,
@@ -116,7 +116,7 @@ interface PricingProps {
 
 const MakeupPricing = ({ plans = pricingPlans, className }: PricingProps) => {
   return (
-    <section className={cn("w-full py-20", className)}>
+    <section id="price" className={cn("w-full py-20", className)}>
       {/* Header */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -143,7 +143,7 @@ const MakeupPricing = ({ plans = pricingPlans, className }: PricingProps) => {
 
       {/* Pricing grid */}
       <div className="mx-auto max-w-7xl px-14">
-        <div className="grid md:grid-cols-3 gap-10 mb-16 mx-10">
+        <div className="grid md:grid-cols-3 gap-10 mb-16 mx-auto">
           {plans.slice(0, 3).map((plan, index) => (
             <PricingCard key={plan.name} plan={plan} index={index} />
           ))}
@@ -187,8 +187,8 @@ const PricingCard = ({ plan, index, className }: PricingCardProps) => {
     >
       {/* Highlight badge */}
       {plan.highlight && (
-        <div className="absolute top-12 -right-17 rotate-45">
-          <span className="bg-rose-600 text-white px-20 py-1 text-[11px] font-semibold shadow-md">
+        <div className="absolute top-10 -right-19 rotate-45">
+          <span className="bg-rose-600/30 text-white px-20 py-1 text-[11px] font-semibold shadow-md">
             Most Popular
           </span>
         </div>
@@ -224,18 +224,20 @@ const PricingCard = ({ plan, index, className }: PricingCardProps) => {
       </div>
 
       {/* CTA */}
-      <Button
-        className={cn(
-          "w-full py-4 text-sm font-semibold rounded-xl transition-all duration-300",
-          // default button style
-          "bg-neutral-800 text-neutral-200 hover:bg-neutral-700",
-          // highlight ONLY for most popular
-          plan.highlight &&
-            "bg-rose-600 text-white hover:bg-rose-500 shadow-md shadow-rose-500/30"
-        )}
-      >
-        {plan.cta}
-      </Button>
+      <a href={plan.link}>
+        <Button
+          className={cn(
+            "w-full py-4 text-sm font-semibold rounded-xl transition-all duration-300",
+            // default button style
+            "bg-neutral-800 text-neutral-200 hover:bg-neutral-700",
+            // highlight ONLY for most popular
+            plan.highlight &&
+              "bg-rose-600/30 text-white hover:bg-rose-500/30 shadow-md shadow-rose-500/30"
+          )}
+        >
+          {plan.cta}
+        </Button>
+      </a>
     </motion.div>
   );
 };

@@ -17,7 +17,7 @@ export default function FooterGlow() {
       {/* Main footer container */}
       <div className="w-full">
         {/* Main footer content */}
-        <div className="relative mx-auto flex max-w-7xl flex-col gap-8 rounded-2xl border border-white/10 bg-linear-to-br from-transparent to-rose-950/30 p-8 backdrop-blur-sm md:flex-row md:justify-between md:gap-12">
+        <div className="relative mx-auto flex max-w-7xl flex-col gap-8 rounded-2xl border border-white/10 bg-linear-to-br from-transparent to-rose-950/10 p-8 backdrop-blur-sm md:flex-row md:justify-between md:gap-12">
           {/* Left: Brand, Description & Contact */}
           <div className="flex flex-col md:flex-row md:gap-12 md:flex-1">
             {/* Brand & Description */}
@@ -73,7 +73,7 @@ export default function FooterGlow() {
 
             {/* Address & Contact Info Column */}
             <div className="flex-1">
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-rose-400">
+              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-rose-100">
                 Contact Info
               </h3>
               <div className="space-y-4">
@@ -120,13 +120,13 @@ export default function FooterGlow() {
           <div className="flex flex-col gap-8 sm:flex-row sm:gap-16">
             {/* Services */}
             <div>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-rose-400">
+              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-rose-100">
                 Services
               </h3>
               <ul className="space-y-3">
                 <li>
                   <Link
-                    href="/bridal"
+                    href="#about"
                     className="text-sm text-white/70 hover:text-rose-300 transition-colors"
                   >
                     Bridal Makeup
@@ -134,7 +134,7 @@ export default function FooterGlow() {
                 </li>
                 <li>
                   <Link
-                    href="/trial"
+                    href="#price"
                     className="text-sm text-white/70 hover:text-rose-300 transition-colors"
                   >
                     Trial Sessions
@@ -142,7 +142,7 @@ export default function FooterGlow() {
                 </li>
                 <li>
                   <Link
-                    href="/family"
+                    href="#price"
                     className="text-sm text-white/70 hover:text-rose-300 transition-colors"
                   >
                     Family Packages
@@ -153,16 +153,16 @@ export default function FooterGlow() {
 
             {/* Quick Links */}
             <div>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-rose-400">
+              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-rose-100">
                 Quick Links
               </h3>
               <ul className="space-y-3">
                 <li>
                   <Link
-                    href="/portfolio"
+                    href="#about"
                     className="text-sm text-white/70 hover:text-rose-300 transition-colors"
                   >
-                    Portfolio
+                    About us
                   </Link>
                 </li>
                 <li>
@@ -200,22 +200,13 @@ export default function FooterGlow() {
             </div>
 
             <div className="flex gap-6 text-xs text-white/50">
-              <Link
-                href="/privacy"
-                className="hover:text-rose-300 transition-colors"
-              >
+              <Link href="#" className="hover:text-rose-300 transition-colors">
                 Privacy Policy
               </Link>
-              <Link
-                href="/terms"
-                className="hover:text-rose-300 transition-colors"
-              >
+              <Link href="#" className="hover:text-rose-300 transition-colors">
                 Terms of Service
               </Link>
-              <Link
-                href="/sitemap"
-                className="hover:text-rose-300 transition-colors"
-              >
+              <Link href="#" className="hover:text-rose-300 transition-colors">
                 Sitemap
               </Link>
             </div>
