@@ -2,7 +2,7 @@ import { CheckCircle, Heart, Shield, Sparkles } from "lucide-react";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white" id="about">
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 md:py-32">
         <div className="container mx-auto px-6">

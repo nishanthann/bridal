@@ -14,7 +14,7 @@ export default function Cta() {
             create your perfect bridal look
           </p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-            <CalLink className="rounded-full bg-rose-600 px-10 py-3 font-medium text-white transition-all hover:bg-rose-700 hover:shadow-lg">
+            <CalLink className="rounded-full bg-rose-600/30 px-10 py-3 font-medium text-white transition-all hover:bg-rose-700 hover:shadow-lg">
               Book Consultation
             </CalLink>
             <Link

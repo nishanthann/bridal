@@ -8,10 +8,11 @@ import { cn } from "@/lib/utils";
 import CalButton from "./booking";
 
 const menuItems = [
-  { name: "Features", href: "#link" },
-  { name: "Solution", href: "#link" },
-  { name: "Pricing", href: "#link" },
-  { name: "About", href: "#link" },
+  { name: "Home", href: "/" },
+  { name: "About Us", href: "#about" },
+
+  { name: "Pricing", href: "#price" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export const HeroHeader = () => {
@@ -29,7 +30,7 @@ export const HeroHeader = () => {
     <header>
       <nav
         data-state={menuState && "active"}
-        className="fixed z-30 w-full px-2"
+        className="fixed z-30 w-full px-2 mt-7"
       >
         <div
           className={cn(
@@ -60,8 +61,8 @@ export const HeroHeader = () => {
                 aria-label={menuState == true ? "Close Menu" : "Open Menu"}
                 className="relative z-20 -m-2.5 -mr-4 block cursor-pointer p-2.5 lg:hidden"
               >
-                <Menu className="in-data-[state=active]:rotate-180 in-data-[state=active]:scale-0 in-data-[state=active]:opacity-0 m-auto size-6 text-pink-600 duration-200" />
-                <X className="in-data-[state=active]:rotate-0 in-data-[state=active]:scale-100 in-data-[state=active]:opacity-100 absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 text-pink-600 duration-200" />
+                <Menu className="in-data-[state=active]:rotate-180 in-data-[state=active]:scale-0 in-data-[state=active]:opacity-0 m-auto size-6 text-rose-600 duration-200" />
+                <X className="in-data-[state=active]:rotate-0 in-data-[state=active]:scale-100 in-data-[state=active]:opacity-100 absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 text-rose-600 duration-200" />
               </button>
             </div>
 
