@@ -1,20 +1,25 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Outfit } from "next/font/google";
+
 import "./globals.css";
 import { HeroHeader } from "./Components/navbar";
 import WhatsAppButton from "./Components/WhatsAppButton";
 import AnnouncementBarStacked from "./Components/AnnouncementBarStacked";
 import FooterGlow from "./Components/Footer";
 
-const geistSans = Geist({
+const outfit = Outfit({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "SH BridalMakeover",
@@ -28,9 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
-      >
+      <body className={`${outfit.className}  antialiased bg-black`}>
         <AnnouncementBarStacked />
 
         <HeroHeader />

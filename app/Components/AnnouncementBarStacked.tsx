@@ -29,26 +29,24 @@ export default function CompactAnnouncementBar() {
       <div className="container mx-auto px-3">
         <div className="flex items-center justify-between py-1.5">
           {/* Left: Phone & Email (Mobile icons only, desktop text) */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center sm:space-x-4">
             <a
-              href="tel:+911234567890"
+              href="tel:+94776103470"
               className="flex items-center space-x-1.5 hover:text-rose-200 transition-colors group"
               title="Call us"
             >
               <Phone
                 size={11}
-                className="shrink-0 group-hover:scale-110 transition-transform"
+                className="shrink-0 group-hover:scale-110 transition-transform "
               />
-              <span className="hidden sm:inline font-medium">
-                +91 98765 43210
-              </span>
+              <span className="hidden sm:inline font-medium">+94776103470</span>
             </a>
 
             <div className="h-3 w-px bg-rose-600" />
 
             <a
-              href="mailto:bookings@bridal.com"
-              className="flex items-center space-x-1.5 hover:text-rose-200 transition-colors group"
+              href="mailto:hayathiri1311@gmail.com"
+              className="flex items-center space-x-1.5 hover:text-rose-200 transition-colors group ml-1"
               title="Email us"
             >
               <Mail
@@ -56,7 +54,7 @@ export default function CompactAnnouncementBar() {
                 className="shrink-0 group-hover:scale-110 transition-transform"
               />
               <span className="hidden sm:inline font-medium">
-                bookings@bridal.com
+                hayathiri1311@gmail.com
               </span>
             </a>
             <div className=" flex items-center space-x-2">

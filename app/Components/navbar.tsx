@@ -67,12 +67,12 @@ export const HeroHeader = () => {
             </div>
 
             <div className="absolute inset-0 m-auto hidden size-fit lg:block">
-              <ul className="flex gap-8 text-sm">
+              <ul className="flex gap-8 text-base">
                 {menuItems.map((item, index) => (
                   <li key={index}>
                     <Link
                       href={item.href}
-                      className="text-white hover:text-gray-100 block duration-150"
+                      className="text-white hover:text-rose-600 block duration-150"
                     >
                       <span>{item.name}</span>
                     </Link>
