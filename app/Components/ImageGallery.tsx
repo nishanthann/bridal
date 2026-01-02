@@ -108,7 +108,7 @@ const Gallery = () => {
                   variants={variantsByColumn[col]}
                   className={`
                     relative w-full overflow-hidden rounded-xl md:rounded-2xl
-                    ${col === 1 || col === 3 ? (i === 1 ? "md:mt-6" : "") : ""}
+                    
                     ${col === 0 || col === 2 ? (i === 0 ? "md:mt-8" : "") : ""}
                   `}
                 >

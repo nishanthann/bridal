@@ -232,7 +232,7 @@ const PricingCard = ({ plan, index, className }: PricingCardProps) => {
             "bg-neutral-800 text-neutral-200 hover:bg-neutral-700",
             // highlight ONLY for most popular
             plan.highlight &&
-              "bg-rose-600/30 text-white hover:bg-rose-500/30 shadow-md shadow-rose-500/30"
+              "bg-rose-600 text-white hover:bg-rose-500/30 shadow-md shadow-rose-500/30"
           )}
         >
           {plan.cta}

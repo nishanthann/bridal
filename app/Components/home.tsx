@@ -7,12 +7,12 @@ export default function BridalHomePage() {
       {/* Mobile Image - Shows only on small screens */}
       <div className="relative h-full w-full sm:hidden">
         <Image
-          src="/6.jpg" // Your mobile image
+          src="/6.jpg"
           alt="Elegant bridal makeup - mobile"
           fill
           priority
           className="object-left object-cover"
-          sizes="100vw"
+          sizes="(max-width: 640px) 100vw"
           quality={75}
         />
         <div className="absolute inset-0 bg-black/20" />
@@ -26,15 +26,15 @@ export default function BridalHomePage() {
           fill
           priority
           className="object-cover lg:object-center"
+          sizes="(min-width: 640px) 100vw"
           quality={75}
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1280px) 100vw, 1400px"
         />
         <div className="absolute inset-0 bg-black/20" />
       </div>
       {/* Content - Moved more to the right */}
-      <div className="absolute inset-0 z-10 flex items-end pb-20 lg:items-center lg:pb-0">
-        <div className="container mx-auto px-6">
-          <div className="max-w-xl ml-12 lg:ml-23">
+      <div className="absolute inset-0 z-10 flex items-end pb-20 lg:items-center lg:pb-0 ">
+        <div className="container mx-auto px-6 sm:mt-15">
+          <div className="max-w-xl ml-11 lg:ml-23">
             {/* Elegant Subtitle */}
             <p className="mb-3 text-sm font-medium tracking-widest text-rose-100/90 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
               • BRIDAL ARTISTRY •
